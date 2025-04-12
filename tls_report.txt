@@ -1,0 +1,10 @@
+TLS Handshake Explanation:
+When a user connects to a secure website using HTTPS, a TLS Handshake begins. First, the client sends a "Client Hello" message that includes supported TLS versions, cipher suites, and the server name (SNI). The server replies with a "Server Hello", selects a cipher, and sends its digital certificate.
+
+Then, a key exchange occurs. In TLS 1.2, it may use RSA or Diffie-Hellman, while in TLS 1.3, it uses the Key Share Extension. After this step, both sides send encrypted handshake messages and establish a shared session key for secure communication.
+
+Protection Against MITM Attacks:
+TLS uses digital certificates signed by trusted Certificate Authorities (CAs). The client verifies that the certificate is valid and matches the intended domain, protecting against man-in-the-middle (MITM) attacks.
+
+TLS in HTTPS:
+HTTPS means HTTP secured with TLS. It encrypts all transmitted data to ensure confidentiality, integrity, and authenticity. TLS secures sensitive information on websites like online banking, email services, social networks, and e-commerce platforms.
