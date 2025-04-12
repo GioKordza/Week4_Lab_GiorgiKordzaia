@@ -1,0 +1,5 @@
+RSA is an asymmetric encryption algorithm that uses two keys: a public key and a private key. It is typically used to encrypt small amounts of data or to securely exchange symmetric keys.
+
+AES is a symmetric encryption algorithm that uses the same key for both encryption and decryption. It is much faster than RSA and is suitable for encrypting large files.
+
+In practice, RSA and AES are often used together. RSA is used to encrypt the AES key, and AES is used to encrypt the actual data. This combination provides both strong security and efficient performance.
